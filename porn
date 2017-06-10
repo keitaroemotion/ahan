@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'date'
+
+porn_file = ARGV[0]
+
+porn_file_encrypted = DateTime.now.to_s.gsub(/[:\-\+]/, "")
+
+system "zip -r #{porn_file_encrypted}.zip #{porn_file}"
+system "rm #{porn_file}"
+
+
