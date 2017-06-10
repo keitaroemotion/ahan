@@ -18,13 +18,6 @@ def ahan_files(ahan_dir)
   Dir["#{ahan_dir}/*"]
 end
 
-def mom_cleans_up_your_mess(mp4)
-  print "[press enter after watching:] "
-  $stdin.gets.chomp
-  system "rm #{mp4}"
-  puts "now your ahan is gone. have a good day!"
-end
-
 case option
 when "-z"
   abort "you need file name"     unless ahan_file
@@ -47,7 +40,7 @@ when "-o"
   system "rm #{ahan}.zip" 
   mp4 = ahan_files(".").select{|ahan| ahan.end_with?(".mp4")}.first
   system "open /Applications/QuickTime\\ Player.app/ #{mp4}"
-  mom_cleans_up_your_mess mp4
+  system "rm #{mp4}"
 when "-h", "--help"
   puts
   puts "ahan [-z] yourahan.mp4 .... encrypt your ahan"
