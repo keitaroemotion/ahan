@@ -9,7 +9,7 @@ require 'date'
 option    = ARGV[0] 
 ahan_file = ARGV[1]
 
-ahan_dir = "/usr/local/etc/nrop/"
+ahan_dir = "/usr/local/etc/.nrop/"
 unless File.directory?(ahan_dir)
   system "mkdir -p #{ahan_dir}"
 end
