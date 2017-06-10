@@ -22,9 +22,6 @@ $ ahan -v [yourfile.mp4]
 $ ahan -o
 ```
 
-Then you can see the instructions. Then you see the interactive mode, never ever press Ctrl+C but Press Enter Key after watching the video.
-
-
 # Notes
 
 I made this script mainly for enjoying the videos downloaded from xvideo, yet maybe this script helps you the people under the political pressure to investigate the video consumption. (Ex. North Korea). Please enjoy this thing and if you want some additional feature, please join this project or contact me: Twitter @keisuganodev Thank you.
