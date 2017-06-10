@@ -27,6 +27,7 @@ end
 
 case option
 when "-z"
+  abort "you need file name"     unless ahan_file
   abort "you need mp4 as input." unless ahan_file.end_with?(".mp4")
   ahan_file_encrypted = DateTime.now.to_s.gsub(/[:\-\+]/, "")
   system "cp #{ahan_file} #{File.basename(ahan_file)}"
